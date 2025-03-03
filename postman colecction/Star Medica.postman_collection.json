@@ -1,0 +1,98 @@
+{
+	"info": {
+		"_postman_id": "0f13b553-e32b-4cba-8e47-32b73438b7a6",
+		"name": "Star Medica",
+		"description": "StartFragment\n\nEsta colección de Postman está diseñada para interactuar con los endpoints de la API de _Star Médica_, con el fin de obtener información detallada sobre los hospitales y los servicios que ofrecen. A través de esta colección, podrás acceder a datos como la ubicación de los hospitales, y servicios. Es una herramienta útil tanto para desarrolladores como para equipos de integración que necesiten consumir y gestionar esta información de manera eficiente.\n\nLos endpoints cubren diversos aspectos, como:\n\n- **Hospitales**: Obtención de información sobre las distintas ubicaciones y sus características.\n    \n- **Servicios** : Consultas sobre los servicios y especialidades disponibles en cada hospital.\n    \n\nEsta colección es ideal para pruebas de integración, desarrollo de aplicaciones y otros procesos relacionados con la gestión de la información de _Star Médica_.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "14839398"
+	},
+	"item": [
+		{
+			"name": "Hospitales",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost/Evaluacion/servicios/getHospitals.php"
+			},
+			"response": []
+		},
+		{
+			"name": "Servicios por Hospital",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/Evaluacion/servicios/hospitalServices.php?hospital=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Evaluacion",
+						"servicios",
+						"hospitalServices.php"
+					],
+					"query": [
+						{
+							"key": "hospital",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Promociones por hospital",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/Evaluacion/servicios/obtenerServicios.php?hospital=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Evaluacion",
+						"servicios",
+						"obtenerServicios.php"
+					],
+					"query": [
+						{
+							"key": "hospital",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Infomacion por Hospital",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/Evaluacion/servicios/obtenerInfoHospital.php?hospital=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Evaluacion",
+						"servicios",
+						"obtenerInfoHospital.php"
+					],
+					"query": [
+						{
+							"key": "hospital",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
